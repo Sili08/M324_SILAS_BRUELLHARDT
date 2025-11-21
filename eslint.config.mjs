@@ -15,6 +15,6 @@ export default defineConfig([
       'no-unused-vars': 'error',
       eqeqeq: ['error', 'always'],
     },
-    extends: ['js/recommended'],
+    ...js.configs.recommended,
   },
 ])

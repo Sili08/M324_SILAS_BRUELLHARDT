@@ -1,5 +1,4 @@
 export const sum = (a, b) => {
-  const myUnusedVar = ''
   return a + b
 }
 
