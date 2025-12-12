@@ -1,0 +1,20 @@
+name: Virus Scan Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  virus-scan:
+    runs-on: ubuntu-latest
+    if: 1 == 2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Virus scan
+        uses: hugoalh/scan-virus-ghaction@v0.20.0
+        with:
+          clamav_update: true
+          paths: '.'
